@@ -1,0 +1,133 @@
+/*Body front size by using google font*/
+body{
+    font-family: 'Vollkorn SC', sans-serif;
+}
+
+/* Navigation bar home */
+#navHome {
+    background-color: transparent;
+}
+
+/* Home section */
+
+#home{background-color: transparent;
+    color: plum;
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Vollkorn SC', sans-serif;
+
+}
+#home h1{
+    margin-bottom: 30px;
+}
+#home h2{
+    margin-bottom: 50px;
+}
+#home .btn{
+    background-color: RGB(29, 167, 179);
+    color: white;
+    font-size: 20px;
+    padding: 8px 20px;
+    border-radius: 8px;
+}
+#home .btn:hover {
+    background-color: rgba(29,167,179,0.5);
+}
+
+.container{
+    max-width: 1000px;
+}
+
+/* About Section */
+#about{
+    color: white;
+    text-align: center;
+    padding-top: 100px;
+}
+#about h2{
+    font-weight:  bold;
+}
+#about p{
+    font-size: 17px;
+    margin-bottom: 30px;
+}
+.aboutImage{
+    background-color: transparent;
+    height: 350px;
+    width: 350px;
+}
+
+/* Promise section*/
+
+#promise{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
+}
+#myCarousel{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.carousel-inner .item img{
+    height: 500px;
+    margin: 0 auto;
+}
+.carousel-caption{
+    position: relative;
+    left: auto;
+    right: auto;
+    height: 100px;
+}
+
+/* Changing size of website to smaller screens */
+@media only screen and (max-width: 600px){
+    .carousel-inner .item img{
+        height: 300px;
+    }
+    .carousel-inner .item h2{
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .carousel-inner .item img{
+        height: 150px;
+    }
+    .carousel-inner .item h2{
+        font-size: 15px;
+    }
+    .navbar-custom .navbar-brand{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        background-image: url('images/main.jpg') center center fixed;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutImage {
+    width: 200px;
+    height: 200px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
