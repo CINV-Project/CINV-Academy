@@ -66,8 +66,12 @@
                 </form>
 
                 <form class="navbar-form navbar-right">
-                    <a href="{% url 'login' %}" class="btn btn-success">Login</a>
-                    <!-- <a href="{% url 'login' %}" class="btn btn-success">Sign up</a> -->
+                    {% if user.is_authenticated %}
+                        <a href="{% url 'logout' %}" class="btn btn-success">Log out</a>
+                    {% else %}
+                        <a href="{% url 'login' %}" class="btn btn-success">Login</a>
+                        <a href="{% url 'register' %}" class="btn btn-success">Sign up</a>
+                    {% endif %}
                 </form>
             </div>
         </div>
@@ -95,6 +99,11 @@
 
 
     <div class="container">
+        {% if user.is_authenticated %}
+            <p style="text-align: right;">Logged in as <strong>{{ user.first_name }}</strong></p>
+        {% endif %}
+
+
         {% if messages %}
         <ul class="list-unstyled" style="margin-top:24px;">
             {% for message in messages %}
