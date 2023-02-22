@@ -40,7 +40,7 @@ body{
 
 /* About Section */
 #about{
-    color: black;
+    color: white;
     text-align: center;
     padding-top: 100px;
 }
@@ -75,7 +75,6 @@ body{
     margin: 0 auto;
 }
 .carousel-caption{
-    color: black;
     position: relative;
     left: auto;
     right: auto;
@@ -107,7 +106,7 @@ body{
 @media only screen and (max-width:768px){
     body{
         background-image: url('images/background2%20(1).jpg') center center fixed;
-        background-size: auto;
+        background-size: cover;
     }
 }
 
@@ -120,6 +119,7 @@ body{
 
 @media only screen and (max-width: 768px){
     #home .container h1{
+        color: deepskyblue;
         font-size: 15px;
     }
     #home .container h2{
@@ -133,22 +133,6 @@ body{
     }
 }
 
-
-@media only screen and (max-width: 768px){
-    .footer h4{
-        font-size: 15px;
-    }
-    .footer p{
-        font-size: 10px;
-    }
-    .copyright .p-small {
-    padding-top: 0.567rem;
-    border-top: 1px auto #c4d8dc;
-    opacity: 0.3;
-    text-align: center;
-    font: 400 0.75rem/1.25rem "Raleway", sans-serif;
-}
-}
 
 
 
@@ -170,7 +154,96 @@ body{
 }
 
 
-/*footer*/
+
+
+
+
+
+
+/*Styling in student page*/
+.img-fuild { max-width: 100%;
+    height: auto;
+}
+
+img {vertical-align:middle;
+    border-style: none
+	overflow-clip-margin: content-box;
+	overflow: clip; 
+}
+
+.row{ display: flex; flex-wrap: wrap; 
+    margin-right: -15px; 
+    margin-left: -15px; 
+}
+
+p {
+    line-height: 1.6 !important;
+    font-size: 16px !important;
+    font-family: 'Vollkorn SC', sans-serif;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.basic-1 h2 {
+    margin-bottom: 1.375rem;
+}
+.basic-2 h2 {
+    margin-bottom: 1.375rem;
+}
+.basic-3 h2 {
+    margin-bottom: 1.375rem;
+}
+h2 {
+    color: #393939;
+    font-family: 'Vollkorn SC', sans-serif;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+@media (max-width: 576px)
+.container {
+}
+
+
+.footer {
+    padding-top: 4.625rem;
+    padding-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 768px)
+.container .footer{
+    max-width: 720px;
+}
+
+
+@media only screen and (max-width: 768px)
+.col-md-4 {
+    flex: 0 0 33%;
+    max-width: 33%;
+}
 
 .copyright .p-small {
     padding-top: 1.375rem;
@@ -179,9 +252,9 @@ body{
     text-align: center;
     font: 400 0.75rem/1.25rem "Raleway", sans-serif;
 }
-
-.footer {
-    padding-top: 4.625rem;
-    padding-bottom: 0.5rem;
+p {
+    line-height: 1.6 !important;
+    font-size: 16px !important;
 }
 
+/* end student page*/
