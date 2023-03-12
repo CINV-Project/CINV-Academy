@@ -94,10 +94,6 @@
   list-style-type: none
 }
 
-.tw-flex-row {
-  flex-direction: row
-}
-
 .tw-flex-col {
   flex-direction: column
 }
