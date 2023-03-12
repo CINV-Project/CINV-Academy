@@ -4,7 +4,7 @@ import jsonrpc from 'jsonrpc-lite';
 export const loadBarRef = createRef();
 
 
-const API_URL = 'http://localhost:8000/api';
+const API_URL = '/api';
 
 function generate_uuid() {
   return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function (c) {
