@@ -1,0 +1,12 @@
+{
+    "require": {
+        "felixfbecker/advanced-json-rpc": "^3.2",
+        "vlucas/spot2": "^2.2",
+        "plasticbrain/php-flash-messages": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cinv\\": "lib/"
+        }
+    }
+}
