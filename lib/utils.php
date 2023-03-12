@@ -30,6 +30,10 @@ function get_config($key)
 {
   static $config;
 
+  if (getenv($key)) {
+    return getenv($key);
+  }
+
   if ($config === null) {
     $config = parse_ini_file(__DIR__ . '/../config.env');
   }
