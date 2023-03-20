@@ -89,7 +89,6 @@ body {
         </ul>
    
 <!-- drop-down for user -->       
-    <form class="navbar-form navbar-right">
       <?php if (is_logged_in()) : ?>
         <?php include_once __DIR__ . '/user_dropdown.php' ?>
       <?php else : ?>
@@ -99,7 +98,7 @@ body {
           </a>
         </form>
       <?php endif ?>
-    </form>
+    
       
 <!-- Searching bar -->        
           
