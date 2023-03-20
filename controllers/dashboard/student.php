@@ -82,7 +82,7 @@ body {
             </ul>
           </li>
             <li>
-            <a href="#contractform.php">
+            <a href="#contact.php">
               Contract Us
             </a>
           </li>
@@ -90,13 +90,15 @@ body {
    
 <!-- drop-down for user -->       
     <form class="navbar-form navbar-right">
-            <a class="btn btn-success" type="button" data-toggle="dropdown">User Name Here!
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="profile.php">Profile</a></li>
-                <li><a href="#">Notification</a></li>
-                <li><a href="logout.php">Log out</a></li>
-            </ul>
+      <?php if (is_logged_in()) : ?>
+        <?php include_once __DIR__ . '/user_dropdown.php' ?>
+      <?php else : ?>
+        <form class="navbar-form navbar-right">
+          <a data-native href="<?= base_path("login") ?>">
+            <input class="btn btn-success" type="button" value="Login or Signup">
+          </a>
+        </form>
+      <?php endif ?>
     </form>
       
 <!-- Searching bar -->        
