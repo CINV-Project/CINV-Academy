@@ -89,7 +89,7 @@ body {
    
 <!-- drop-down for user -->       
       <?php if (is_logged_in()) : ?>
-        <?php include_once __DIR__ . '/user_dropdown.php' ?>
+        <?php include_once __DIR__ . 'layout/chunks/user_dropdown.php' ?>
       <?php else : ?>
         <form class="navbar-form navbar-right">
           <a data-native href="<?= base_path("login") ?>">
