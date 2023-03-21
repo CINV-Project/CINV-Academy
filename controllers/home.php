@@ -11,7 +11,8 @@
 
 </div>
 
-<!-- Create Section Showing course detail -->
+<!-- Create Section Showing course detail  -->
+
 
 
 <div id="about">
