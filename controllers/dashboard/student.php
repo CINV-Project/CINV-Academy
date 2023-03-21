@@ -135,22 +135,7 @@ body {
   <script src="js/bootstrap.min.js">
   </script>
       
-      
-      
- <!-- input bacground image-->    
-<!--
-<style>
-body {
-  background-image: url('images/main.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
--->
-
-      
-      
+     
 <!-- detail of functionnal -->
 
       
