@@ -82,3 +82,13 @@ function redirect($path)
   header('Location: ' . $path);
   exit();
 }
+
+function is_site_admin($email)
+{
+  return in_array($email, [
+    'ntsu@uncg.edu',
+    'clafiemo@uncg.edu',
+    'njvino@uncg.edu',
+    'slhitney@uncg.edu',
+  ]);
+}

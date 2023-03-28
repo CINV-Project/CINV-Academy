@@ -41,6 +41,17 @@ export async function loginUser(userData) {
   return result;
 }
 
+export async function getStudents() {
+  result = await rpcCall('user/getStudents');
+
+  return result?.students || [];
+}
+export async function getInstructors() {
+  result = await rpcCall('user/getInstructors');
+
+  return result?.instructors || [];
+}
+
 export async function completeRegistration(role) {
   const id = localStorage.getItem('userId');
   const userData = { role, completed_registration: true };
