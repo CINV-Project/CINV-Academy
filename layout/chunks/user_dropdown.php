@@ -20,6 +20,11 @@
       <li>
         <a data-native href="<?= base_path("dashboard") ?>" class="tw-block tw-px-4 tw-py-2 tw-hover:bg-gray-100 tw-dark:hover:bg-gray-600 tw-dark:hover:text-white">Dashboard</a>
       </li>
+      <?php if (is_site_admin($_SESSION['email'])) : ?>
+        <li>
+          <a data-native href="<?= base_path("dashboard/admin/students") ?>" class="tw-block tw-px-4 tw-py-2 tw-hover:bg-gray-100 tw-dark:hover:bg-gray-600 tw-dark:hover:text-white">CINV Admin</a>
+        </li>
+      <?php endif ?>
     </ul>
     <div class="tw-py-1">
       <a data-native href="<?= base_path("logout") ?>" class="tw-block tw-px-4 tw-py-2">Sign out</a>

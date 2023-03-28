@@ -3,6 +3,9 @@ import { h, render } from 'preact';
 import { Router } from 'preact-router';
 import { Login } from './Login';
 import { Dashboard } from './Dashboard';
+import { AdminDashboard } from './admin/Dashboard';
+import { AdminDashboardStudent } from './admin/Student';
+import { AdminDashboardInstructors } from './admin/Instructors';
 import { LoginAdditional } from './LoginAdditional';
 import { LoginType } from './LoginType';
 import LoadingBar from 'react-top-loading-bar';
@@ -16,6 +19,9 @@ const App = () => (
       <LoginType path="/login/type" />
       <LoginAdditional path="/login/additional" />
       <Dashboard path="/dashboard" />
+      <AdminDashboard path="/dashboard/admin" />
+      <AdminDashboardStudent path="/dashboard/admin/students" />
+      <AdminDashboardInstructors path="/dashboard/admin/instructors" />
       <Dashboard path="/dashboard/:role" />
       <Error type="404" default />
     </Router>

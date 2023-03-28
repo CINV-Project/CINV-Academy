@@ -16,6 +16,34 @@ class Server
 
 class UserServer
 {
+  public function getAll()
+  {
+
+    $userMapper = db()->mapper('Cinv\Entity\User');
+    $users = $userMapper->all();
+    $response = ['status' => 'success', 'users' => $users];
+
+    return json_encode($response);
+  }
+
+  public function getInstructors()
+  {
+    $userMapper = db()->mapper('Cinv\Entity\User');
+    $instructors = $userMapper->where(['role' => 'instructor'])->with('instructors');
+    $response = ['status' => 'success', 'instructors' => $instructors];
+
+    return json_encode($response);
+  }
+
+  public function getStudents()
+  {
+    $userMapper = db()->mapper('Cinv\Entity\User');
+    $students = $userMapper->where(['role' => 'student']);
+    $response = ['status' => 'success', 'students' => $students];
+
+    return json_encode($response);
+  }
+
   public function login($user)
   {
     $response = ['status' => 'success',  'is_registered' => false,  'role' => 'student', 'id' => $user->sub];
