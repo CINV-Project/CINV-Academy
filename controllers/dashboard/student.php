@@ -13,8 +13,9 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="Styling.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap" rel="stylesheet">
-      
+   
  <!-- create background cover -->     
+
 <style>
 body {
   background-image: url('images/background2%20(1).jpg');
@@ -131,11 +132,11 @@ body {
 <br>
 
 <!-- Boostrap template -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
   </script>
   <script src="js/bootstrap.min.js">
   </script>
-      
+       -->
      
 <!-- detail of functionnal -->
 
