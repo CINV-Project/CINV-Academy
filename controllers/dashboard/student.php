@@ -89,15 +89,7 @@ body {
         </ul>
    
 <!-- drop-down for user -->       
-      <?php if (is_logged_in()) : ?>
-        <?php include_once __DIR__ . 'layout/chunks/user_dropdown.php' ?>
-      <?php else : ?>
-        <form class="navbar-form navbar-right">
-          <a data-native href="<?= base_path("login") ?>">
-            <input class="btn btn-success" type="button" value="Login or Signup">
-          </a>
-        </form>
-      <?php endif ?>
+
     
       
 <!-- Searching bar -->        
