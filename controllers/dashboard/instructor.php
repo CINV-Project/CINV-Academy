@@ -57,7 +57,7 @@ body {
             </a>
           </li>
           <li>
-            <a href="#home">
+            <a href="index.php">
               Connection
             </a>
           </li>
