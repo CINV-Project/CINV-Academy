@@ -26,7 +26,7 @@ body {
       
       
 <!-- Navigation bar-->
-</head>
+<!-- </head>
 <body>
     <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
@@ -86,14 +86,23 @@ body {
               Contract Us
             </a>
           </li>
-        </ul>
+        </ul> -->
    
 <!-- drop-down for user -->       
-
+      <?php if (is_logged_in()) : ?>
+        <?php include_once __DIR__ . 'layout/chunks/user_dropdown.php' ?>
+      <?php else : ?>
+        <form class="navbar-form navbar-right">
+          <a data-native href="<?= base_path("login") ?>">
+            <input class="btn btn-success" type="button" value="Login or Signup">
+          </a>
+        </form>
+      <?php endif ?> 
+     
     
       
 <!-- Searching bar -->        
-          
+<!--           
         <form class="navbar-form navbar-right" role="search">
           <div class="input-group">
             <span class="input-group-btn">
@@ -108,7 +117,7 @@ body {
             <span class="glyphicon glyphicon-search form-control-feedback">
             </span>
           </div>
-        </form>
+        </form> -->
 <!-- end of searching bar -->
                      
      </div>

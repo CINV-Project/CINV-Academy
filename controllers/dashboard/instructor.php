@@ -57,7 +57,7 @@ body {
             </a>
           </li>
           <li>
-            <a href="#">
+            <a href="#home">
               Connection
             </a>
           </li>
