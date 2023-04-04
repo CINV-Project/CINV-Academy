@@ -45,7 +45,7 @@
           //print error message
           $resultMessage = '<div class="alert alert-danger">' . $errors . '</div>';
         } else {
-          $to = "nhatst9@gmail.com"; //to admin email
+          $to = "admin@gmail.com"; //to admin email
           $subject = "Contact";
           $message = "
         <p>Name: $name.</p>
