@@ -1,3 +1,8 @@
+<div class="tw-max-w-[1000px] tw-m-auto tw-p-[16px]">
+  <?php flash_message()->display(); ?>
+</div>
+
+
    <!--main script -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -138,8 +143,7 @@
     </script>
 
 </head>
-
-
+<body>
 <div class="container">
     <div class=" wrapper">
         <!--calendar class-->
@@ -147,7 +151,8 @@
     </div> 
     
 </div>
-    
-    
+
+
+
 </body>
 </html>

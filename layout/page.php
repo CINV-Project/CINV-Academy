@@ -12,6 +12,10 @@
   <link href="/static/css/Styling.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap" rel="stylesheet">
 
+   <!--Include sources for calendar-->
+   <script src="js/sweetalert2.all.min.js"></script>
+  <link href="js/fullcalendar/lib/main.css" rel="stylesheet" />
+  <script src="js/fullcalendar/lib/main.js"></script>
 
   <style>
 
