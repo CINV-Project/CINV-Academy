@@ -10,10 +10,10 @@
       <div class="row"> 
         <div class="col-lg-6">
           <div class="text-container" style="margin-top:15px;">
-            <h2> Connect with professors! <h2>
-            <p> <small>Easy, convenient, and quick meetings with professors.</small> </p>
+            <h2> Full Calendar Events <h2>
+            <p> <small>Easy create events and quick meetings with professors.</small> </p>
             <p> <small>Flexible meeting schedules for both students and professors</small> </p>
-                      <p> <a class="btn btn-lg" href="#"> Connecting </a> </p>
+                      <p> <a class="btn btn-lg" href="/fullcalendar.php"> Full Calendar </a> </p>
           </div>
           <!-- end of class container -->
 
