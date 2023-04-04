@@ -35,12 +35,12 @@
     <div class="container">
       <div class="row"> 
         <div class="col-lg-6">
-          <div class="text-container" style="margin-top:15px;">
-            <h2> Improve your knowledge! <h2>
-            <p> <small>Connections with professors and other students help facilitate learning.</small> </p>
-            <p> <small>Learn whatever you want, and whenever you want!</small> </p>
-                          <p> <a class="btn btn-lg" href="#"> Connecting </a> </p>
-          </div>
+        <div class="text-container" style="margin-top:15px;">
+            <h2> Full Calendar Events <h2>
+            <p> <small>Easy create events and quick meetings with professors.</small> </p>
+            <p> <small>Flexible meeting schedules for both students and professors</small> </p>
+            <p> <a class="btn btn-lg" href="/fullcalendar.php"> Full Calendar </a> </p>
+        </div>
           <!-- end of class container -->
 
         </div>
