@@ -4,7 +4,7 @@ session_start();
 
 function db_query(string $query, array $data = array())
 {
-	$string = "mysql:hostname=localhost;dbname=test";
+	$string = "mysql:hostname=localhost;dbname=cinv";
 	$con = new PDO($string, 'root', '');
 
 	$stm = $con->prepare($query);

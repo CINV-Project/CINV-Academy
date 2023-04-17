@@ -1,4 +1,24 @@
 
+<?php 
+
+	require 'functions.php';
+
+	if(!is_logged_in())
+	{
+		redirect('login.php');
+	}
+
+	$id = $_GET['id'] ?? $_SESSION['PROFILE']['id'];
+
+	$row = db_query("select * from users where id = :id limit 1",['id'=>$id]);
+
+	if($row)
+	{
+		$row = $row[0];
+	}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -10,8 +30,14 @@
     </title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="Styling.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Vollkorn+SC&display=swap" rel="stylesheet">
-      
+    <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
+
+  <!-- Boostrap template -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
+  </script>
+  <script src="js/bootstrap.min.js">
+  </script>
+             
  <!-- create background cover -->     
 <style>
 body {
@@ -29,7 +55,7 @@ body {
     <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#home">
+          <a class="navbar-brand" href="student.php">
             CINV ACADEMY
           </a>
           <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
@@ -47,11 +73,11 @@ body {
       <div class="navbar-collapse collapse" id="navbarCollapse">
         <ul class="nav navbar-nav">
           <li class="active">
-            <a href="#home">
+            <a href="student.php">
             <span class="glyphicon glyphicon-home"> </span> Home</a>
           </li>
             <li>
-            <a href="#">
+            <a href="fullcalendar.php">
               Calendar
             </a>
           </li>
@@ -61,13 +87,8 @@ body {
             </a>
           </li>
             <li>
-            <a href="#">
+            <a href="./discussion.php">
               Discussion
-            </a>
-          </li>
-            <li>
-            <a href="note.php">
-              Note
             </a>
           </li>
           <li>
@@ -80,21 +101,28 @@ body {
             </ul>
           </li>
             <li>
-            <a href="#contractform.php">
-              Contract Us
+            <a href="profile.php">
+              Profile
             </a>
           </li>
         </ul>
    
 <!-- drop-down for user -->       
     <form class="navbar-form navbar-right">
-            <a class="btn btn-success" type="button" data-toggle="dropdown">User Name Here!
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Notification</a></li>
-                <li><a href="#">Log out</a></li>
-            </ul>
+            <a class="btn btn-success" type="button" data-toggle="dropdown">Hello, <?php echo $_SESSION["PROFILE"]['firstname'];?>
+                <img src="<?= get_image($_SESSION['PROFILE']['image'])?>" 
+                    style="	margin-right:5px;
+                    width: 20px;
+                    height:20px;
+                    object-fit:cover;
+                    border-radius: 50%;" >
+                <span class="caret"> </span>
+              </a>
+                  <ul class="dropdown-menu">
+                    <li><a href="profile.php">Profile</a></li>
+                    <li><a href="logout.php">Log out</a></li>
+                  </ul>  
+            
     </form>
       
 <!-- Searching bar -->        
@@ -122,44 +150,18 @@ body {
     
 <!-- end of nav-bar -->       
     
-<br>
-<br>
-<br>
-
-<!-- Boostrap template -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
-  </script>
-  <script src="js/bootstrap.min.js">
-  </script>
-      
-      
-      
- <!-- input bacground image-->    
-<!--
-<style>
-body {
-  background-image: url('images/main.jpg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
-</style>
--->
-
-      
-      
+    
 <!-- detail of functionnal -->
-
-      
-      
+   
 <div class="basic-1">
 	<div class="container">
 		<div class="row"> 
 			<div class="col-lg-6">
-				<div class="text-container" style="margin-top:15px;">
-					<h2> Connect with students! <h2>
-					<p> <small> It's easy, fast, and convenient to set up meetings with students.</small></p>
-					<p><small> Flexible meeting times to fit your schedule.</small> </p>
+				<div class="text-container" style="margin-top:15%;">
+					<h2> Connect with professors! <h2>
+					<p> <small>Easy, convenient, and quick meetings with professors.</small> </p>
+					<p> <small>Flexible meeting schedules for both students and professors</small> </p>
+                    <p> <a class="btn btn-lg" href="#"> Connecting </a> </p>
 				</div>
 				<!-- end of class container -->
 
@@ -190,6 +192,7 @@ body {
 					<h2> Improve your knowledge! <h2>
 					<p> <small>Connections with professors and other students help facilitate learning.</small> </p>
 					<p> <small>Learn whatever you want, and whenever you want!</small> </p>
+                        <p> <a class="btn btn-lg" href="#"> Connecting </a> </p>
 				</div>
 				<!-- end of class container -->
 
@@ -216,8 +219,11 @@ body {
 		<div class="row"> 
 			<div class="col-lg-6">
 				<div class="text-container" style="margin-top:15px;">
-					<h2> Choose your subjects <h2>
-					<p> <small> Mentor in subjects that you feel most qualified to teach in </small> </p>
+					<h2> Discuss with classmates! <h2>
+            <p> <small>Have a quick question to ask, but don't want to ask a professor?</small> </p>
+            <p> <small>Want to help other students out with their questions?</small> </p>
+            <p> <small>The Discussion page is the place for that!</small></p>
+                        <p> <a class="btn btn-lg" href="#"> Discussion </a> </p>
 				</div>
 				<!-- end of class container -->
 

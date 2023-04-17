@@ -1,7 +1,7 @@
 <?php
-include_once("db_connect.php");
+include_once("dbConfig.php");
 $commentQuery = "SELECT id, parent_id, comment, sender, date FROM comment WHERE parent_id = '0' ORDER BY id DESC";
-$commentsResult = mysqli_query($conn, $commentQuery) or die("database error:". mysqli_error($conn));
+$commentsResult = mysqli_query($db, $commentQuery) or die("database error:". mysqli_error($db));
 $commentHTML = '';
 while($comment = mysqli_fetch_assoc($commentsResult)){
 	$commentHTML .= '
@@ -10,14 +10,14 @@ while($comment = mysqli_fetch_assoc($commentsResult)){
 		<div class="panel-body">'.$comment["comment"].'</div>
 		<div class="panel-footer" align="right"><button type="button" class="btn btn-primary reply" id="'.$comment["id"].'">Reply</button></div>
 		</div> ';
-	$commentHTML .= getCommentReply($conn, $comment["id"]);
+	$commentHTML .= getCommentReply($db, $comment["id"]);
 }
 echo $commentHTML;
 
-function getCommentReply($conn, $parentId = 0, $marginLeft = 0) {
+function getCommentReply($db, $parentId = 0, $marginLeft = 0) {
 	$commentHTML = '';
 	$commentQuery = "SELECT id, parent_id, comment, sender, date FROM comment WHERE parent_id = '".$parentId."'";	
-	$commentsResult = mysqli_query($conn, $commentQuery);
+	$commentsResult = mysqli_query($db, $commentQuery);
 	$commentsCount = mysqli_num_rows($commentsResult);
 	if($parentId == 0) {
 		$marginLeft = 0;
@@ -33,7 +33,7 @@ function getCommentReply($conn, $parentId = 0, $marginLeft = 0) {
 				<div class="panel-footer" align="right"><button type="button" class="btn btn-primary reply" id="'.$comment["id"].'">Reply</button></div>
 				</div>
 				';
-			$commentHTML .= getCommentReply($conn, $comment["id"], $marginLeft);
+			$commentHTML .= getCommentReply($db, $comment["id"], $marginLeft);
 		}
 	}
 	return $commentHTML;

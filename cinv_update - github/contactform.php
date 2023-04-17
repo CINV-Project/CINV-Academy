@@ -121,10 +121,10 @@ body {
         
         <form class="navbar-form navbar-right">
           >
-            <a href="login.html" > 
+            <a href="login.php" > 
                 <input class="btn btn-success" type="button" value="Login" >
             </a>
-            <a href="#">
+            <a href="signup.php">
             <input class="btn btn-success" type="button" value="Sign Up">
             </a>
             

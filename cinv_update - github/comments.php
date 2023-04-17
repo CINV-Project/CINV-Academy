@@ -1,8 +1,8 @@
 <?php
-include_once("db_connect.php");
+include_once("dbConfig.php");
 if(!empty($_POST["name"]) && !empty($_POST["comment"])){
 	$insertComments = "INSERT INTO comment (parent_id, comment, sender) VALUES ('".$_POST["commentId"]."', '".$_POST["comment"]."', '".$_POST["name"]."')";
-	mysqli_query($conn, $insertComments) or die("database error: ". mysqli_error($conn));	
+	mysqli_query($db, $insertComments) or die("database error: ". mysqli_error($db));	
 	$message = '<label class="text-success">Comment posted Successfully.</label>';
 	$status = array(
 		'error'  => 0,

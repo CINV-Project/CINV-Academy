@@ -107,8 +107,15 @@ body {
    
 <!-- drop-down for user -->       
     <form class="navbar-form navbar-right">
-            <a class="btn btn-success" type="button" data-toggle="dropdown">Hello <?php echo $_SESSION["PROFILE"]['firstname'];?>
-                <span class="caret"></span></a>
+            <a class="btn btn-success" type="button" data-toggle="dropdown">Hello, <?php echo $_SESSION["PROFILE"]['firstname'];?> 
+              <img src="<?= get_image($_SESSION['PROFILE']['image'])?>" 
+                    style="	margin-right:5px;
+                    width: 20px;
+                    height:20px;
+                    object-fit:cover;
+                    border-radius: 50%;" >
+                <span class="caret"> </span>
+              </a>
               <ul class="dropdown-menu">
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="logout.php">Log out</a></li>

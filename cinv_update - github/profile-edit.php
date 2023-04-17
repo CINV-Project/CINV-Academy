@@ -53,7 +53,7 @@ body {
     <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="#home">
+          <a class="navbar-brand" href="student.php">
             CINV ACADEMY
           </a>
           <button type="button" class="navbar-toggle" data-target="#navbarCollapse" data-toggle="collapse">
@@ -71,7 +71,7 @@ body {
       <div class="navbar-collapse collapse" id="navbarCollapse">
         <ul class="nav navbar-nav">
           <li >
-            <a href="#home">
+            <a href="student.php">
             <span class="glyphicon glyphicon-home"> </span> Home</a>
           </li>
             <li>
@@ -107,8 +107,15 @@ body {
    
 <!-- drop-down for user -->       
     <form class="navbar-form navbar-right">
-            <a class="btn btn-success" type="button" data-toggle="dropdown">Hello <?php echo $_SESSION["PROFILE"]['firstname'];?>
-                <span class="caret"></span></a>
+            <a class="btn btn-success" type="button" data-toggle="dropdown">Hello, <?php echo $_SESSION["PROFILE"]['firstname'];?>
+				<img src="<?= get_image($_SESSION['PROFILE']['image'])?>" 
+                    style="	margin-right:5px;
+                    width: 20px;
+                    height:20px;
+                    object-fit:cover;
+                    border-radius: 50%;" >
+                <span class="caret"> </span>
+			</a>
               <ul class="dropdown-menu">
                 <li><a href="profile.php">Profile</a></li>
                 <li><a href="logout.php">Log out</a></li>
