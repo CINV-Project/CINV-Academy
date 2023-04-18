@@ -1,8 +1,8 @@
-
 <?php 
 
 	require 'functions.php';
 
+    require 'dbConfig.php';
 	if(!is_logged_in())
 	{
 		redirect('login.php');
@@ -148,148 +148,127 @@ body {
   </div>
   </nav>
     
-<!-- end of nav-bar -->       
-    
-    
-<!-- detail of functionnal -->
-   
-<div class="basic-1">
-	<div class="container">
-		<div class="row"> 
-			<div class="col-lg-6">
-				<div class="text-container" style="margin-top:15%;">
-					<h2> Connect with professors! <h2>
-					<p> <small>Easy, convenient, and quick meetings with professors.</small> </p>
-					<p> <small>Flexible meeting schedules for both students and professors</small> </p>
-                    <p> <a class="btn btn-lg" href="#"> Connecting </a> </p>
-				</div>
-				<!-- end of class container -->
+<!-- end of nav-bar -->     
 
-			</div>
-				<!-- end of col -->
 
-			<div class="col-lg-6">
-				<div class="image-container">
-					<img class="img-fluid" src="https://www.naishare.com/assets/images/details-1-office-worker.svg " alt="alternative">
-				</div>
-                                
-				<!-- end of image container -->
-			</div>
-			<!-- end of col -->
-		</div>
-		<!-- end of row -->
-	</div>
-	<!-- end of container -->
-</div>
+<!--Start of Page -->
 
-        
+<?php
+$sql = $db->query("Select * from subject where subject='compSci'");
 
-<div class="basic-2">
-	<div class="container">
-		<div class="row"> 
-			<div class="col-lg-6">
-				<div class="text-container" style="margin-top:15px;">
-					<h2> Improve your knowledge! <h2>
-					<p> <small>Connections with professors and other students help facilitate learning.</small> </p>
-					<p> <small>Learn whatever you want, and whenever you want!</small> </p>
-                        <p> <a class="btn btn-lg" href="#"> Connecting </a> </p>
-				</div>
-				<!-- end of class container -->
+echo "<table>";
+echo "<tr><th>Textbook Name</th><th>Link</th></tr>";
 
-			</div>
-				<!-- end of col -->
+while($row = mysqli_fetch_array($sql)){
+    echo "<tr><td>";
+    echo $row['textbookName'];
+    echo "</td><td>";
+    echo $row['textbookLink'];
+    echo "</td></tr>";
+}
+echo "</table>";
+?>
+<style>
+      table {
+        border-collapse: separate;
+        border-spacing: 0 15px;
+      }
+      th {
+        background-color: #4287f5;
+        color: white;
+      }
+      th,
+      td {
+        width: 150px;
+        text-align: center;
+        border: 1px solid black;
+        padding: 5px;
+      }
+      h2 {
+        color: #4287f5;
+      }
+    </style>
 
-			<div class="col-lg-6">
-				<div class="image-container">
-					<img class="img-fluid" src="https://www.naishare.com/assets/images/header-teamwork.svg " alt="alternative">
-				</div>
-                                
-				<!-- end of image container -->
-			</div>
-			<!-- end of col -->
-		</div>
-		<!-- end of row -->
-	</div>
-	<!-- end of container -->
-</div>
-      
+    <!--Add a textbook -->
 
-<div class="basic-3">
-	<div class="container">
-		<div class="row"> 
-			<div class="col-lg-6">
-				<div class="text-container" style="margin-top:15px;">
-					<h2> Discuss with classmates! <h2>
-            <p> <small>Have a quick question to ask, but don't want to ask a professor?</small> </p>
-            <p> <small>Want to help other students out with their questions?</small> </p>
-            <p> <small>The Discussion page is the place for that!</small></p>
-                        <p> <a class="btn btn-lg" href="#"> Discussion </a> </p>
-				</div>
-				<!-- end of class container -->
+<div class="wrapper">
+    <form class="form-signin">       
+      <h2 class="form-signin-heading">Please Fill in the form to Assign Materials</h2>
+      Textbook Name: <input type="text" name="textbookName">
+      <br>
+      Textbook Link: <input type="text" name="textbookLink">    
+      <br>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>   
+    </form>
+  </div>
+  <style>
+body {
+	background: #eee !important;	
+}
 
-			</div>
-				<!-- end of col -->
+.wrapper {	
+	margin-top: 80px;
+  margin-bottom: 80px;
+}
 
-			<div class="col-lg-6">
-				<div class="image-container">
-					<img class="img-fluid" src="https://www.naishare.com/assets/images/details-2-office-team-work.svg" alt="alternative">
-				</div>
-                                
-				<!-- end of image container -->
-			</div>
-			<!-- end of col -->
-		</div>
-		<!-- end of row -->
-	</div>
-	<!-- end of container -->
-</div>
-        
-<!-- Footer --> 
-<div class="footer">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-4" >
-                <div class="footer-col" >
-                    <h4>About Cinv Academy</h4>
-                    <p> something write here!
-                    </p>
-                </div>
-            </div>
-            
-            <div class="col-md-4" >
-                <div class="footer-col middle" >
-                    <h4>Privacy policy</h4>
-                    <p> something write here!
-                    </p>
-                </div>
-            </div>
-            
-            
-            <div class="col-md-4" >
-                <div class="footer-col last" >
-                    <h4>Social Media or something here!</h4>
-                    <p> Write something here!
-                    </p>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-    
-</div>
+.form-signin {
+  max-width: 380px;
+  padding: 15px 35px 45px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid rgba(0,0,0,0.1);  
 
-<!-- copy right -->
-<div class="copyright" >
-    <div class="container" >
-        <div class="row">
-            <div class="col-lg-12">
-                <p class="p-small"> "Copyright &copy; 2023" < link here! > Cinv Academy "-All rights reseverd" 
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-        
-        
+  .form-signin-heading,
+	.checkbox {
+	  margin-bottom: 30px;
+	}
+
+	.checkbox {
+	  font-weight: normal;
+	}
+
+	.form-control {
+	  position: relative;
+	  font-size: 16px;
+	  height: auto;
+	  padding: 10px;
+		@include box-sizing(border-box);
+
+		&:focus {
+		  z-index: 2;
+		}
+	}
+
+	input[type="text"] {
+	  margin-bottom: -1px;
+	  border-bottom-left-radius: 0;
+	  border-bottom-right-radius: 0;
+	}
+
+	input[type="password"] {
+	  margin-bottom: 20px;
+	  border-top-left-radius: 0;
+	  border-top-right-radius: 0;
+	}
+}
+</style>
+<?php
+if(isset($_GET["textbookName"])){
+    $textbookName = $_GET["textbookName"];
+    $textbookLink = $_GET["textbookLink"];
+}
+if(isset($textbookName)){
+    $sql = "INSERT INTO subject VALUES ('compSci', '$textbookName', '$textbookLink')";
+
+
+    if($db->query($sql) == TRUE){
+        echo "Success";
+        header("refresh:1; url=student.php");
+    }else{
+        echo "Failed";
+    }
+}
+?>
+
 </body>
 </html>
