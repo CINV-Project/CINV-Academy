@@ -22,7 +22,7 @@
  <!-- input bacground image-->    
 <style>
 body {
-  background-image: url('images/background2%20(1).jpg');
+  background-image: url('images/plainBackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -79,7 +79,7 @@ body {
           </li> -->
             <li>
             <a href="index.php">
-              Contract Us
+              Contact Us
             </a>
           </li>
         </ul>
@@ -143,7 +143,7 @@ body {
 			<button class="btn btn-primary col-12">Login</button>
 
 			<div class="m-2">
-				Dont have an account? <a href="signup.php">signup here</a>
+				Don't have an account yet? <a href="signup.php">Sign up here!</a>
 			</div>
 		</div>
 	</form>
@@ -152,6 +152,8 @@ body {
 
 </body>
 </html>
+
+<!-- note: i think this should partially be removed, the progress bar..... -->
 
 <script>
 	

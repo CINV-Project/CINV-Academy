@@ -22,7 +22,7 @@
  <!-- input bacground image-->    
 <style>
 body {
-  background-image: url('images/background2%20(1).jpg');
+  background-image: url('images/plainBackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -77,7 +77,7 @@ body {
           </li> -->
             <li>
             <a href="contact.form">
-              Contract Us
+              Contact Us
             </a>
           </li>
         </ul>
@@ -139,7 +139,7 @@ body {
 				<div class="input-group mt-3">
 				<span class="input-group-text" id="basic-addon1"><i class="bi bi-person"></i></span>
 				<select class="form-select" name="idGroup">
-					<option selected value="">--Select Identify As--</option>
+					<option selected value="">--Select your role:--</option>
 					<option value="Student">Student</option>
 					<option value="Teacher">Teacher</option>
 				</select>
@@ -169,7 +169,7 @@ body {
 
 				<button class="mt-3 btn btn-primary col-12">Signup</button>
 				<div class="m-2">
-					Already have an account? <a href="login.php">login here</a>
+					Already have an account? <a href="login.php">Log in here!</a>
 				</div>
 
 				</div>

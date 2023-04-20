@@ -32,7 +32,8 @@
             }
             @media only screen and (max-width:768px){
                 body{
-                    background-image: url('images/background2%20(1).jpg') center center fixed;
+                    /* background-image: url('images/background2%20(1).jpg') center center fixed; */
+                    background-image: url('images/plainBackground.png') center center fixed;
                     background-size: auto;
                     }
             }
@@ -44,7 +45,7 @@
     <!-- background image -->
 <style>
 body {
-  background-image: url('images/background2%20(1).jpg');
+  background-image: url('images/plainBackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

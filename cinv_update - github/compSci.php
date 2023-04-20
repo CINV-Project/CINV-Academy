@@ -26,7 +26,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
-      Cinv Academy
+      CINV Academy
     </title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="Styling.css" rel="stylesheet">
@@ -41,7 +41,7 @@
  <!-- create background cover -->     
 <style>
 body {
-  background-image: url('images/background2%20(1).jpg');
+  background-image: url('images/plainBackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

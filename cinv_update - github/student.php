@@ -41,7 +41,7 @@
  <!-- create background cover -->     
 <style>
 body {
-  background-image: url('images/background2%20(1).jpg');
+  background-image: url('images/plainBackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -189,10 +189,15 @@ body {
 		<div class="row"> 
 			<div class="col-lg-6">
 				<div class="text-container" style="margin-top:15px;">
-					<h2> Improve your knowledge! <h2>
+        <!-- Note: I think this should be something else, such as "view course materials" -->
+					<!-- <h2> Improve your knowledge! <h2>
 					<p> <small>Connections with professors and other students help facilitate learning.</small> </p>
 					<p> <small>Learn whatever you want, and whenever you want!</small> </p>
-                        <p> <a class="btn btn-lg" href="#"> Connecting </a> </p>
+                        <p> <a class="btn btn-lg" href="#"> Connecting </a> </p> -->
+          <h2> Improve your knowledge! <h2>
+					<p> <small>View various course materials to learn on your own time!</small> </p>
+					<p> <small>Easy, quick, and convenient access to educational materials!</small> </p>
+                        <p> <a class="btn btn-lg" href="#"> PLACEHOLDER FOR MATERIALS! </a> </p>
 				</div>
 				<!-- end of class container -->
 
@@ -245,21 +250,23 @@ body {
 </div>
         
 <!-- Footer --> 
+<!-- Footer --> 
+
 <div class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-4" >
                 <div class="footer-col" >
-                    <h4>About Cinv Academy</h4>
-                    <p> something write here!
+                    <h4>About CINV Academy</h4>
+                    <p> Making learning more interactive and accessible
                     </p>
                 </div>
             </div>
             
             <div class="col-md-4" >
                 <div class="footer-col middle" >
-                    <h4>Privacy policy</h4>
-                    <p> something write here!
+                    <h4>Create an account</h4>
+                    <p>Start learning today with our fast and secure login system!
                     </p>
                 </div>
             </div>
@@ -267,8 +274,9 @@ body {
             
             <div class="col-md-4" >
                 <div class="footer-col last" >
-                    <h4>Social Media or something here!</h4>
-                    <p> Write something here!
+                    <h4>Have questions or comments?</h4>
+                    <p>Contact us to let us know! 
+                      <!-- maybe add a link here to "contact" page? -->
                     </p>
                 </div>
             </div>
@@ -283,13 +291,15 @@ body {
     <div class="container" >
         <div class="row">
             <div class="col-lg-12">
-                <p class="p-small"> "Copyright &copy; 2023" < link here! > Cinv Academy "-All rights reseverd" 
+                <!-- <p class="p-small"> "Copyright C 2023" < link here! > Cinv Academy "-All rights reseverd" 
+                </p> -->
+                <p class="p-small"> "Copyright 2023" Cinv Academy "-All rights reseverd" 
                 </p>
+                <!-- note: we don't actually have a copyright... -->
             </div>
         </div>
     </div>
-</div>
-        
+</div>          
         
 </body>
 </html>
