@@ -2,9 +2,9 @@
 
 define('APP', 'Cinv');
 
-define('DB_HOST', 'cinv.mysql.database.azure.com');
+define('DB_HOST', '');
 define('DB_USER', 'cinv');
-define('DB_PASS', 'Project490!@');
+define('DB_PASS', '');
 define('DB_NAME', 'testcinv');
 
 //make a database connection

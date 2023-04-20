@@ -1,8 +1,8 @@
 <?php  
 // Database configuration  
-define('DB_HOST', 'cinv.mysql.database.azure.com'); 
+define('DB_HOST', ''); 
 define('DB_USERNAME', 'cinv'); 
-define('DB_PASSWORD', 'Project490!@'); 
+define('DB_PASSWORD', ''); 
 define('DB_NAME', 'testcinv'); 
   
 // Create database connection  
