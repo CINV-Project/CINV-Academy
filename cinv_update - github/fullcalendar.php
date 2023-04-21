@@ -48,7 +48,31 @@
     <!-- create background cover -->     
     <style>
     body {
-    background-image: url('images/background2%20(1).jpg');
+      /* note: maybe use a dark background for contrast? */
+      /* black is the best one I've tried, but a more appealing color could be used if the colors
+      on the calendar could be changed (such as making all text and lines darker) */
+    /* trying different backgrounds... */
+    /* background-image: url('images/plainBackground.png');  */
+    /* bad contrast */
+
+    background-image: url('images/black.png');
+    /* bad contrast on "April 2023" date text, but OK otherwise */
+
+    /* background-image: url('images/semi-dark-green.png');  */
+    /* this looks terrible */
+
+    /* background-image: url('images/dark-blue-grey.png'); */
+    /* bad contrast */
+
+    /* background-image: url('images/very-dark-green.png'); */
+    /* bad contrast on "April 2023" date text...doesn't look great */
+
+    /* background-image: url('images/grey-brown.png'); */
+    /* bad contrast */
+
+    background-image: url('images/dark-brown.png');
+    /* bad contrast */
+
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;

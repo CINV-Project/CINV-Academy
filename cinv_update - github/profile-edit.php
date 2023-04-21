@@ -39,7 +39,7 @@
  <!-- create background cover -->     
 <style>
 body {
-  background-image: url('images/background2%20(1).jpg');
+  background-image: url('images/plainBackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;

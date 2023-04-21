@@ -22,7 +22,8 @@
  <!-- input bacground image-->    
 <style>
 body {
-  background-image: url('images/background2%20(1).jpg');
+  /* background-image: url('images/background2%20(1).jpg'); */
+  background-image: url('images/plainBackground.png');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -115,7 +116,8 @@ body {
 <div class="jumbotron" id="home">
     <div class="container">
         <h1>CINV ACADEMY</h1>
-        <h2> Cinv Academy is narrowing the online learning environment, by making it more interactive and accessible!</h2>
+        <!-- <h2> Cinv Academy is narrowing the online learning environment, by making it more interactive and accessible!</h2> -->
+        <h2> CINV Academy makes online learning easier with a focus on interactivity and accessibility!</h2>
          <p>  <a class="btn btn-lg" href="signup.php"> Join Us Now! </a>
             <!-- <button type="button" class="btn" data-target="signup.php"> 
         Join Us Now!
@@ -136,22 +138,22 @@ body {
             <div class="col-md-6">
                 <img src="images/calendar.jpg" class="aboutImage">
                 <h2>Calendar</h2>
-                <p>We can tracking calendar events and save it here!</p>
+                <p>See upcoming meetings or schedule appointments!</p>
             </div>
             <div class="col-md-6">
                 <img src="images/selflearning2.jpg"class="aboutImage">
                 <h2>Self Learning</h2>
-                <p>Some introduction of self learning</p>
+                <p>Learn at your own pace in your own way!</p>
             </div>
             <div class="col-md-6">
                 <img src="images/discussion2.jpg" class="aboutImage">
                 <h2>Discussion board</h2>
-                <p>Something about discussion board</p>
+                <p>Chat with students and professors to ask and answer questions!</p>
             </div>
             <div class="col-md-6">
                 <img src="images/connecting2.jpg" class="aboutImage">
-                <h2>Conncecting with teacher</h2>
-                <p>We can online connecting between student with professor/volunteer/tutor </p>
+                <h2>Connect with a professor</h2>
+                <p>Connect online with a professor for one-on-one learning!</p>
             </div>
         
         </div>
@@ -177,14 +179,14 @@ body {
                   <div class="item active">
                       <img src="images/classroom.jpg">
                       <div class="carousel-caption">
-                          <h2> Engaging lectures with professor by online connection.
+                          <h2> Engaging lectures with professors by an online connection.
                           </h2>
                       </div>
                   </div> 
                   <div class="item">
                       <img src="images/education space.jpg">
                       <div class="carousel-caption">
-                          <h2>Learning on your own schedule
+                          <h2>Learn on your own schedule
                           </h2>
                       </div>
                   </div>
@@ -198,7 +200,7 @@ body {
                   </a>
                   <a class="right carousel-control" href="#myCarousel" data-slide="next">
                       <span class="glyphicon glyphicon-chevron-right"> </span>
-                      <span class="sr-only">next </span>
+                      <span class="sr-only"> Next </span>
                   
                   </a>
                   <a>
@@ -210,24 +212,22 @@ body {
       
       </div>
       
-
-      
-<!-- Footer --> 
-<div class="footer">
+<!-- footer -->
+      <div class="footer">
     <div class="container">
         <div class="row">
             <div class="col-md-4" >
                 <div class="footer-col" >
-                    <h4>About Cinv Academy</h4>
-                    <p> something write here!
+                    <h4>About CINV Academy</h4>
+                    <p> Making learning more interactive and accessible
                     </p>
                 </div>
             </div>
             
             <div class="col-md-4" >
                 <div class="footer-col middle" >
-                    <h4>Privacy policy</h4>
-                    <p> something write here!
+                    <h4>Create an account</h4>
+                    <p>Start learning today with our fast and secure login system!
                     </p>
                 </div>
             </div>
@@ -235,8 +235,9 @@ body {
             
             <div class="col-md-4" >
                 <div class="footer-col last" >
-                    <h4>Social Media or something here!</h4>
-                    <p> Write something here!
+                    <h4>Have questions or comments?</h4>
+                    <p>Contact us to let us know! 
+                      <!-- maybe add a link here to "contact" page? -->
                     </p>
                 </div>
             </div>
@@ -251,16 +252,19 @@ body {
     <div class="container" >
         <div class="row">
             <div class="col-lg-12">
-                <p class="p-small"> "Copyright C 2023" < link here! > Cinv Academy "-All rights reseverd" 
+                <!-- <p class="p-small"> "Copyright C 2023" < link here! > Cinv Academy "-All rights reseverd" 
+                </p> -->
+                <p class="p-small"> "Copyright 2023" CINV Academy "-All rights reseverd" 
                 </p>
+                <!-- note: we don't actually have a copyright... -->
             </div>
         </div>
     </div>
 </div>  
-      
+
+            
       
 
-      
     
   </body>
 </html>
