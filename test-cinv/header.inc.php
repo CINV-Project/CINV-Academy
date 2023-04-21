@@ -43,12 +43,12 @@ include "header.php";
             </a>
           </li>
           <li>
-              <a class="dropdown-toggle" type="button" data-toggle="dropdown">Department
+            <a class="dropdown-toggle" type="button" data-toggle="dropdown">Department
                 <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Computer Science</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Math</a></li>
+            <ul class="dropdown-menu">
+                <li><a href="./compSci.php">Computer Science</a></li>
+                <li><a href="./english.php">English</a></li>
+                <li><a href="./math.php">Math</a></li>
             </ul>
           </li>
             <li >
@@ -58,7 +58,7 @@ include "header.php";
           </li>
         </ul>
          
-<!-- Searching bar -->        
+      <!-- Searching bar -->        
           
         <form class="navbar-form navbar-right" role="search">
           <div class="input-group">
@@ -75,7 +75,7 @@ include "header.php";
             </span>
           </div>
         </form>
-<!-- end of searching bar -->
+      <!-- end of searching bar -->
 
 
 	<div class="class_9" style="display:flex;align-items: center;justify-content: center;"  >

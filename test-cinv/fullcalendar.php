@@ -38,7 +38,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap-icons.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="student.css" rel="stylesheet">
+    <link href="Styling.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Vollkorn&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
@@ -212,8 +212,7 @@ include "header.inc.php";
 ?>      
 
 
-<div class="class_1" style="padding-top:10%; padding-bottom:10%;
-max-width:auto;">
+<div class="class_1" style="padding:5%;max-width:auto; margin-top:10%">
     <div class=" wrapper">
         <!--calendar class-->
         <div id="calendar"></div>

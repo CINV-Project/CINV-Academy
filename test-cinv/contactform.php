@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>
@@ -19,7 +19,6 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js">
   </script>
   <script src="js/bootstrap.min.js"></script>
-  <script src="javascript.js"></script>
 
         <style>
             h1{
@@ -88,17 +87,9 @@ body {
               Our Promise
             </a>
           </li>
-          <li>
-              <a class="dropdown-toggle" type="button" data-toggle="dropdown">Department
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Computer Science</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Math</a></li>
-            </ul>
-          </li>
+          
             <li>
-                <a href="contactform.php">
+              <a href="contactform.php">
               Contact Us
             </a>
           </li>
@@ -121,10 +112,10 @@ body {
         
         <form class="navbar-form navbar-right">
           >
-            <a href="login.php" > 
+            <a href="login.inc.php" > 
                 <input class="btn btn-success" type="button" value="Login" >
             </a>
-            <a href="signup.php">
+            <a href="signup.inc.php">
             <input class="btn btn-success" type="button" value="Sign Up">
             </a>
             

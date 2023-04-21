@@ -125,7 +125,7 @@ body {
 	<h1 class="class_27"  >
 		Sign Up
 	</h1>
-	<img src="assets/images/signup.png" style="width: 80px;
+	<img src="./images/CVIN.png" style="width: 80px;
 	height: 80px;
 	object-fit: cover;" >
 	<form onsubmit="signup.submit(event)" method="post" class="class_57" >

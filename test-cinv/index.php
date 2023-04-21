@@ -66,15 +66,6 @@ body {
               Our Promise
             </a>
           </li>
-          <!-- <li>
-              <a class="dropdown-toggle" type="button" data-toggle="dropdown">Department
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Computer Science</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Math</a></li>
-            </ul>
-          </li> -->
             <li>
             <a href="contactform.php">
               Contact Us
@@ -134,18 +125,18 @@ body {
         <div class="row">
             <div class="col-md-6">
                 <img src="images/calendar.jpg" class="aboutImage">
-                <h2>Calendar</h2>
-                <p>We can tracking calendar events and save it here!</p>
+                <h2> Events Calendar</h2>
+                <p>looking for free events occurrence, or create an event for everyone can join!</p>
             </div>
             <div class="col-md-6">
                 <img src="images/selflearning2.jpg"class="aboutImage">
-                <h2>Self Learning</h2>
-                <p>Some introduction of self learning</p>
+                <h2>Text Book</h2>
+                <p>looking for all the free text book, and we can help you share some!</p>
             </div>
             <div class="col-md-6">
                 <img src="images/discussion2.jpg" class="aboutImage">
-                <h2>Discussion board</h2>
-                <p>Something about discussion board</p>
+                <<h2>Discussion Board</h2>
+                <p>Looking for the answer? or any question need to be answer? We got it! </p>
             </div>
             <div class="col-md-6">
                 <img src="images/connecting2.jpg" class="aboutImage">
@@ -156,7 +147,7 @@ body {
         </div>
     </div> 
       
-</div>      
+</div>     
       
 <!-- Create Carousel -->     
       

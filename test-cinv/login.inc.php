@@ -70,15 +70,6 @@ body {
               Our Promise
             </a>
           </li>
-          <!-- <li>
-              <a class="dropdown-toggle" type="button" data-toggle="dropdown">Department
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Computer Science</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Math</a></li>
-            </ul>
-          </li> -->
             <li>
             <a href="contactform.php">
               Contact Us
@@ -126,7 +117,7 @@ body {
 	<h1 class="class_27"  >
 		Login
 	</h1>
-	<img src="./assets/images/login.jpg" style="width: 80px;
+	<img src="./images/CVIN.png" style="width: 80px;
 	height: 80px;
 	object-fit: cover;" >
 	<form onsubmit="login.submit(event)" method="post" class="class_57" >

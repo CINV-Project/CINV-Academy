@@ -1,12 +1,16 @@
 
 <?php
 	session_start();
-
-	// require('config.inc.php');
-	// require('functions.php');
+  require('config.inc.php');
+  require('functions.php');
+  
+  if($row)
+    {
+      $row = $row[0];
+    }
 
 	// if(!logged_in()){
-	// 	header("Location: student.php");
+	// 	header("Location: index.php");
 	// 	die;
 	// }
 
@@ -57,9 +61,6 @@
 
 <body>
 <header class="class_2" >
-	<!-- <div class="class_3" >
-		<img src="assets/images/slack.png" class="class_4" >
-	</div> -->
     <nav role="navigation" class="navbar navbar-inverse navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -77,59 +78,61 @@
             <span class="icon-bar">
             </span>
           </button>
-      </div>
-      <div class="navbar-collapse collapse" id="navbarCollapse">
-        <ul class="nav navbar-nav">
-          <li >
-            <a href="student.php">
-            <span class="glyphicon glyphicon-home"> </span> Home</a>
-          </li>
-            <li>
-            <a href="fullcalendar.php">
-              Calendar
-            </a>
-          </li>
-            <li>
-            <a href="./forum.php">
-              Discussion
-            </a>
-          </li>
-          <li>
-              <a class="dropdown-toggle" type="button" data-toggle="dropdown">Department
-                <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Computer Science</a></li>
-                <li><a href="#">English</a></li>
-                <li><a href="#">Math</a></li>
-            </ul>
-          </li>
-            <li >
-            <a href="profile.php">
-              Profile
-            </a>
-          </li>
-        </ul>
-		<!-- Searching bar -->        
-          
-        <form class="navbar-form navbar-right" role="search">
-          <div class="input-group">
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-info">
-                Go
-              </button>
-            </span>
-            <label for="search" class="sr-only">
-              Search
-            </label>
-            <input type="text" id="search" class="form-control" placeholder="Search">
-            <span class="glyphicon glyphicon-search form-control-feedback">
-            </span>
           </div>
-        </form>
-<!-- end of searching bar -->		
-	  </div>
-	  </div>
-	</nav>        	
+          <div class="navbar-collapse collapse" id="navbarCollapse">
+            <ul class="nav navbar-nav">
+              <li >
+                <a href="student.php">
+                <span class="glyphicon glyphicon-home"> </span> Home</a>
+              </li>
+                <li>
+                <a href="fullcalendar.php">
+                  Calendar
+                </a>
+              </li>
+                <li>
+                <a href="./forum.php">
+                  Discussion
+                </a>
+              </li>
+              <li>
+                  <a class="dropdown-toggle" type="button" data-toggle="dropdown">Department
+                    <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="./compSci.php">Computer Science</a></li>
+                    <li><a href="./english.php">English</a></li>
+                    <li><a href="./math.php">Math</a></li>
+                </ul>
+              </li>
+                <li >
+                <a href="profile.php">
+                  Profile
+                </a>
+              </li>
+              <!-- drop-down for user -->   
+            </ul>
+              <!-- Searching bar -->        
+        
+              <form class="navbar-form navbar-right" role="search">
+                <div class="input-group">
+                  <span class="input-group-btn">
+                    <button type="submit" class="btn btn-info">
+                      Go
+                    </button>
+                  </span>
+                  <label for="search" class="sr-only">
+                    Search
+                  </label>
+                  <input type="text" id="search" class="form-control" placeholder="Search">
+                  <span class="glyphicon glyphicon-search form-control-feedback">
+                  </span>
+                </div>
+              </form>
+              <!-- end of searching bar -->		
+
+	      </div>
+	    </div>
+	  </nav>        	
 </header>      
 
 <!-- start body -->
@@ -139,18 +142,18 @@
         <div class="row">
             <div class="col-md-6">
                 <img src="images/calendar.jpg" class="aboutImage">
-                <a href="./fullcalendar.php"><h2>Calendar</h2></a>
-                <p>We can tracking calendar events and save it here!</p>
+                <a href="./fullcalendar.php"><h2> Events Calendar</h2></a>
+                <p>looking for free events occurrence, or create an event for everyone can join!</p>
             </div>
             <div class="col-md-6">
                 <img src="images/selflearning2.jpg"class="aboutImage">
-                <h2>Self Learning</h2>
-                <p>Some introduction of self learning</p>
+                <a href="./compSci.php"><h2>Text Book</h2></a>
+                <p>looking for all the free text book, and we can help you share some!</p>
             </div>
             <div class="col-md-6">
                 <img src="images/discussion2.jpg" class="aboutImage">
                 <a href="./forum.php"><h2>Discussion Board</h2></a>
-                <p>Something about discussion board</p>
+                <p>Looking for the answer? or any question need to be answer? We got it! </p>
             </div>
             <div class="col-md-6">
                 <img src="images/connecting2.jpg" class="aboutImage">
