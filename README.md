@@ -6,3 +6,6 @@ User manual:
 Starting from the main page you can sign up with the Join Us Now! button or sign up at the top.
 
 ![image](https://user-images.githubusercontent.com/97636457/235280005-090b7978-6f87-4b59-bc15-5f7ec7f27e7f.png)
+
+Fill in the required information to create an account and sign up
+![image](https://user-images.githubusercontent.com/97636457/235280035-08cd0dc4-2e0e-4d51-bcc5-fcd09789b6eb.png)
