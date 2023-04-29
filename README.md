@@ -33,3 +33,11 @@ You can also edit events or delete events off the calendar.
 Moving to the discussion page you can see posts made by other users:
 ![image](https://user-images.githubusercontent.com/97636457/235280270-43433acc-b65a-4e8a-bedd-9cf87a2548b7.png)
 
+Add a post by putting your question in the testbox then click post and it will appear at the top of the discussion board:
+![image](https://user-images.githubusercontent.com/97636457/235280311-4096db8b-c600-40b2-88c1-82c9833e8210.png)
+
+You can also view comments on other peoples posts by clicking on the comments:
+![image](https://user-images.githubusercontent.com/97636457/235280338-a57c97f7-6efd-4a65-bd65-6edcf7338b7c.png)
+
+This will redirect you to posts and comments made by other users:
+![image](https://user-images.githubusercontent.com/97636457/235280348-f797eb7c-0051-4de8-a0c8-b23f2ad31ed5.png)
