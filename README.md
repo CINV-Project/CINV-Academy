@@ -41,3 +41,19 @@ You can also view comments on other peoples posts by clicking on the comments:
 
 This will redirect you to posts and comments made by other users:
 ![image](https://user-images.githubusercontent.com/97636457/235280348-f797eb7c-0051-4de8-a0c8-b23f2ad31ed5.png)
+
+Moving into the department section this will allow you to find text materials for subjects:
+![image](https://user-images.githubusercontent.com/97636457/235280384-22be02f4-c7a7-451e-bbd0-bf826fe32de3.png)
+
+Click on any of the subjects and you will be redirected to that page:
+![image](https://user-images.githubusercontent.com/97636457/235280404-bd080286-d746-4ae2-adf7-19368eb7417f.png)
+
+On the left you can see textbooks posted by other users with their associated links.  Copy and paste these links into your search bar to view some of the free textbooks which can supplement your learning.
+You can also add in new textbooks by filling out the form on the right:
+![image](https://user-images.githubusercontent.com/97636457/235280450-67430acc-5bc2-407c-96d6-8c6db3811ad5.png)
+
+Use the profile tab on the navbar to move to your profile page:
+![image](https://user-images.githubusercontent.com/97636457/235280472-5b86a111-2d68-48d0-b5ad-b6273c7a8aeb.png)
+
+
+
