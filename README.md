@@ -15,3 +15,9 @@ Then you can move to the login page:
 
 After loggin in you will move to the main page:
 ![image](https://user-images.githubusercontent.com/97636457/235280077-4c4c299f-476e-4161-9b24-567dcdd2f3fb.png)
+
+Moving to the calendar page using the navbar at the top will move you to the calendar functionality.
+![image](https://user-images.githubusercontent.com/97636457/235280115-8287f2b2-0385-4445-9cb1-3331e4bf13a3.png)
+
+By selecting a day on the calendar you can create an event and add a link to the software you want to use:
+![image](https://user-images.githubusercontent.com/97636457/235280137-58d0d9cc-f0bb-4247-9e46-2c5e56c73a55.png)
