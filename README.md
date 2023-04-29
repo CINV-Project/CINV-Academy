@@ -21,3 +21,15 @@ Moving to the calendar page using the navbar at the top will move you to the cal
 
 By selecting a day on the calendar you can create an event and add a link to the software you want to use:
 ![image](https://user-images.githubusercontent.com/97636457/235280137-58d0d9cc-f0bb-4247-9e46-2c5e56c73a55.png)
+
+After filling in this information it will appear directly on the calendar.
+![image](https://user-images.githubusercontent.com/97636457/235280203-407105bb-c893-4af2-a908-97e5634cef97.png)
+
+To join an event click on one of the events on the calendar and click Visit event page which will direct you to the meeting software:
+![image](https://user-images.githubusercontent.com/97636457/235280239-9f7571cd-cde4-42f8-9a6f-ed845d30e163.png)
+
+You can also edit events or delete events off the calendar.
+
+Moving to the discussion page you can see posts made by other users:
+![image](https://user-images.githubusercontent.com/97636457/235280270-43433acc-b65a-4e8a-bedd-9cf87a2548b7.png)
+
