@@ -55,5 +55,8 @@ You can also add in new textbooks by filling out the form on the right:
 Use the profile tab on the navbar to move to your profile page:
 ![image](https://user-images.githubusercontent.com/97636457/235280472-5b86a111-2d68-48d0-b5ad-b6273c7a8aeb.png)
 
+Click edit profile to move to a page which lets you edit your profile information:
+![image](https://user-images.githubusercontent.com/97636457/235280498-de3a9c4f-f1b3-4f68-aee8-92e9d38db380.png)
 
+Or you can simply logout using the logout button which will end your session.
 
