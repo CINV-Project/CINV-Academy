@@ -9,3 +9,9 @@ Starting from the main page you can sign up with the Join Us Now! button or sign
 
 Fill in the required information to create an account and sign up
 ![image](https://user-images.githubusercontent.com/97636457/235280035-08cd0dc4-2e0e-4d51-bcc5-fcd09789b6eb.png)
+
+Then you can move to the login page:
+![image](https://user-images.githubusercontent.com/97636457/235280056-70d2b837-d10f-4ec7-b505-354b171a9eb6.png)
+
+After loggin in you will move to the main page:
+![image](https://user-images.githubusercontent.com/97636457/235280077-4c4c299f-476e-4161-9b24-567dcdd2f3fb.png)
